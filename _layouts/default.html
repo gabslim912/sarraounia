@@ -64,11 +64,11 @@
     <div class="page-wrapper">
     
       <!-- background image -->
-      <div class="fullscreen-bg"></div>
+      
 
       <!-- banner start -->
       <!-- ================ -->
-      <div class="pv-40 dark-translucent-bg">
+      <div class="pv-40 ">
         <div class="container">
           <div class="row">
             <div class="col-md-12 text-center pv-20">
@@ -77,10 +77,10 @@
                 <div class="row">
 
                   <div class="col-md-6 text-center">
-                    <img src="../images/logo_en.png" alt="Sarraounia Prize" width="230px" height="auto" class="text-center logo-display" >
+                    <img src="../images/logo_en.png" alt="Sarraounia Prize" width="150px" height="auto" class="text-center logo-display" >
                   </div>
                   <div class="col-md-6 text-center">
-                    <img src="../images/logo_fr.png" alt="Sarraounia Prize" width="230px" height="auto" class="text-center logo-display">
+                    <img src="../images/logo_fr.png" alt="Sarraounia Prize" width="150px" height="auto" class="text-center logo-display">
                   </div>
                 </div>
                 <div class="separator"></div>
@@ -88,22 +88,22 @@
                 <h1 class="page-title text-center">WE ARE COMING SOON</h1>
                 
                 
-                <ul class="list-inline mb-20 text-center">
-                  <li><i class="text-default fa fa-map-marker pr-5"></i> Dakar, Sénégal</li>
-                  <li><a href="tel:+00 1234567890" class="link-dark"><i class="text-default fa fa-phone pl-10 pr-5"></i>+221 270 20 39</a></li>
-                  <li><a href="mailto:info@sarraounia.com" class="link-dark"><i class="text-default fa fa-envelope-o pl-10 pr-5"></i>info@sarraounia.com</a></li>
-                </ul>
+               
                 <!-- countdown start -->
                 <div class="countdown clearfix"></div>
                 <!-- countdown end -->
-                <ul class="social-links circle animated-effect-1 text-center">
-                  <li class="facebook"><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
-                  
-                  <li class="googleplus"><a target="_blank" href="#"><i class="fa fa-google-plus"></i></a></li>
-                  <li class="linkedin"><a target="_blank" href="#"><i class="fa fa-linkedin"></i></a></li>
-                  
-                </ul>
+                
+                
               </div> 
+            </div>
+            <div class="col-md-10 col-md-offset-1">
+              <div class="owl-carousel clients">
+                  {% for partner in site.partners %}
+                  <div class="client" style="height: 100px">
+                    <a href="{{ partner.link }}"><img src="{{ partner.logo }}" alt="{{ partner.name }}" width="100px" style="display: inline-block;" align="middle"></a>
+                  </div>
+                  {% endfor %}
+                </div>
             </div>
           </div>
           <!-- .subfooter start -->

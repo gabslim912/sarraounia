@@ -842,7 +842,7 @@
 				navigationText: false
 			});
 			$(".owl-carousel.clients").owlCarousel({
-				items: 6,
+				items: 8,
 				autoPlay: true,
 				pagination: false,
 				itemsDesktopSmall: [992,4],
